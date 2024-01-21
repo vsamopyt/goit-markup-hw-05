@@ -739,8 +739,8 @@ body {
 }
 
 .label-checkbox {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     color: #8E8F99;
     font-size: 12px;
     line-height: 1.17; /* 116.667% */
