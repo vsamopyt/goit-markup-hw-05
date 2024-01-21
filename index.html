@@ -533,10 +533,16 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form" action="#">
-          <label class="footer-label-email" for="footer-form-email">Subscribe</label>
-          <div class="footer-input-btn-wrapper">
+
+        <div class="footer-form-container">
+          <p class="footer-title-subscribe">Subscribe</p>
+
+         <form class="footer-form-subscribe" action="#"> 
+         <label class="footer-label-email" for="footer-form-email">
           <input class="footer-input-email" type="email" name="footer-form-email" id="footer-form-email" placeholder="E-mail">
+         </label>
+          <!-- <div class="footer-input-btn-wrapper"> -->
+          <!-- <input class="footer-input-email" type="email" name="footer-form-email" id="footer-form-email" placeholder="E-mail"> -->
           <button class="footer-btn-submit" type="submit">Subscribe
             <svg
                   width="24"
@@ -546,15 +552,15 @@
                   <use href="./images/icons.svg#icon-frames"></use>
                 </svg>
           </button>
-        </div>
-        </form>
-      
+        <!-- </div> -->
+        </form> 
+       </div>
       </div>
     </footer>
 
     <div class="backdrop">
       <div class="modal-window">
-        <button class="btn-closing">
+        <button class="btn-closing" type="button">
           <svg width="8" height="8" class="img-closing">
             <use href="./images/icons.svg#icon-btn-closing"></use>
           </svg>
@@ -572,7 +578,7 @@
                 id="user-name"
                 autofocus
               />
-              <svg width="18" height="18" class="modal-icons modal-icon-user">
+              <svg width="18" height="24" class="modal-icons modal-icon-user">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -600,7 +606,7 @@
               </svg>
             </div>
           </div>
-          <div class="input-wraper">
+          <div class="input-wraper input-wraper-comment">
             <label class="label" for="user-comment">Comment</label>
             <textarea
               class="input input-comment"
@@ -609,25 +615,24 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="input-wraper">
+          <div class="input-wraper input-wraper-checkbox">
             <input
               class="input-checkbox visually-hidden"
               type="checkbox"
               name="checkbox-policy"
-              id="checkbox-policy"
+              id="user-privacy"
               value="true"
             />
-            <label class="label label-checkbox" for="checkbox-policy">
+            <label class="label label-checkbox" for="user-privacy">
               <span class="pseudo-checkbox">
                 <svg width="10" height="8" class="modal-icon-cheking">
                   <use href="./images/icons.svg#icon-vectors"></use>
                 </svg>
               </span>
-              <span class="lebel-chekbox-text-wraper">
-               I accept the terms and conditions of
-                the
-                <a class="label-link-policy" href="#">Privacy Policy</a>
-              </span>
+              <!-- <span class="lebel-chekbox-text-wraper"> -->
+              I accept the terms and conditions of the
+              <a class="label-link-policy" href="#">Privacy Policy</a>
+              <!-- </span> -->
             </label>
           </div>
           <button class="modal-btn-submit" type="submit">Send</button>
