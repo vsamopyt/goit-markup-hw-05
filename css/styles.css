@@ -229,6 +229,8 @@ body {
     display:flex;
     flex-direction: row;
     gap: 24px;
+    
+    flex-wrap: wrap;
 }
 
 .feature-list-item {
@@ -270,6 +272,8 @@ body {
 .team-list {
     display: flex;
     gap: 24px;
+
+    flex-wrap: wrap;
 }
 
 .team-list .list-item {
@@ -762,9 +766,6 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-link-policy {
-    margin-left: 4px;
-}
 
 .input:focus {
     border-color: #4D5AE5;
